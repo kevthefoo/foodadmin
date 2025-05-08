@@ -1,96 +1,30 @@
 @import "tailwindcss";
 
-/* CSS Reset */
 :root {
   --background: #171717;
   --foreground: #ffffff;
 }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #0a0a0a;
+    --background: #ededed;
+  }
+}
+
+@layer base {
+
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 100vw;
   background: var(--background);
   color: var(--foreground);
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-section {
-  min-height: 100vh;
-  width: 100%;
-  padding: 0 6rem 2rem;
-}
-
-h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-button,
-input,
-textarea {
-  border: none;
-  outline: none;
-  font: inherit;
-  background: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* -------------------- Media Queries -------------------- */
-@media (max-width: 320px) {
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 576px) {
-}
-
-@media (max-width: 640px) {
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 992px) {
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 1280px) {
-}
-
-@media (max-width: 1536px) {
+  font-family: Arial, Helvetica, sans-serif;
 }

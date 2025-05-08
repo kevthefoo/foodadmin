@@ -14,10 +14,10 @@ export default function LoginForm() {
                 <input
                     id="username"
                     type="text"
-                    className="w-full border-b border-4 border-white bg-transparent pb-2 text-white"
+                    className="w-full border-4 border-white bg-transparent pb-10"
                     placeholder="Username"
                 />
-                <label htmlFor="username" className="sr-only">
+                {/* <label htmlFor="username" className="sr-only">
                     Password
                 </label>
                 <input
@@ -25,7 +25,7 @@ export default function LoginForm() {
                     type="password"
                     className="w-full border-b border-4 border-white bg-transparent pb-2 text-white"
                     placeholder="Password"
-                />
+                /> */}
             </div>
         </form>
     );
