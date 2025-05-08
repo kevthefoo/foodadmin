@@ -4,22 +4,17 @@ import { useState } from "react";
 import { User, KeyRound } from "lucide-react";
 
 export default function LoginForm() {
-    const [rememberMe, setRememberMe] = useState(false);
-
     return (
-        <form className="border-4 flex flex-col justify-center items-center bg-red-700">
-            <div className="text-red-500 h-10 border-2 p-8 border-red-500">
-                hello
-            </div>
-            <h3 className="self-center">Login</h3>
-            <div className="bg-red-700">
+        <form className=" border-4 flex flex-col justify-center items-center px-4 py-20">
+            <h3 className="self-center border-4">Login</h3>
+            <div className="">
                 <label htmlFor="username" className="sr-only">
                     Username
                 </label>
                 <input
                     id="username"
                     type="text"
-                    className="w-full border-b border-white/70 bg-transparent pb-2 text-white outline-none"
+                    className="w-full border-b border-4 border-white bg-transparent pb-2 text-white"
                     placeholder="Username"
                 />
                 <label htmlFor="username" className="sr-only">
@@ -28,7 +23,7 @@ export default function LoginForm() {
                 <input
                     id="password"
                     type="password"
-                    className="w-full border-b border-white/70 bg-transparent pb-2 text-white outline-none"
+                    className="w-full border-b border-4 border-white bg-transparent pb-2 text-white"
                     placeholder="Password"
                 />
             </div>
