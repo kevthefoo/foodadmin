@@ -95,7 +95,7 @@ export default function Dashboard() {
                             <p>Recent Activity Log</p>
                             <p>10</p>
                         </div>
-                        <div className="border-2 border-black rounded-xl w-2/3 bg-stone-300 aspect-square flex flex-col justify-center items-center">
+                        <div className="cursor-pointer border-2 border-black rounded-xl w-2/3 bg-stone-300 aspect-square flex flex-col justify-center items-center">
                             <p className="text-9xl">+</p>
                         </div>
                     </div>
