@@ -27,7 +27,7 @@ export default function MainLayout({ children }) {
                 </nav>
             </header>
 
-            <main className=" h-full flex justify-center items-center pt-4 border-6 border-blue-500">
+            <main className=" h-full flex justify-center items-center pt-4">
                 <nav className="w-1/6 h-full border-r-2 border-black px-16 pt-4">
                     <ul className="flex flex-col justify-start items-start gap-4">
                         <li className="text-xl ">
