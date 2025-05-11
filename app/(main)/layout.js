@@ -44,15 +44,6 @@ export default function MainLayout({ children }) {
                         </li>
                         <li className="text-xl ">
                             <Link
-                                href="/profile"
-                                className="flex items-center justify-center gap-2"
-                            >
-                                <FaCircleUser />
-                                <h1>Profile</h1>
-                            </Link>
-                        </li>
-                        <li className="text-xl ">
-                            <Link
                                 href="/menu"
                                 className="flex items-center justify-center gap-2"
                             >
@@ -60,6 +51,16 @@ export default function MainLayout({ children }) {
                                 <h1>Menu</h1>
                             </Link>
                         </li>
+                        <li className="text-xl ">
+                            <Link
+                                href="/profile"
+                                className="flex items-center justify-center gap-2"
+                            >
+                                <FaCircleUser />
+                                <h1>Profile</h1>
+                            </Link>
+                        </li>
+
                         <li className="text-xl ">
                             <Link
                                 href="/settings"
