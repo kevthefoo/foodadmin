@@ -1,5 +1,6 @@
 "use client";
 
+
 import { useState } from "react";
 
 import { Toaster, toast } from "sonner";
@@ -10,6 +11,7 @@ import { LuMilk } from "react-icons/lu";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { GiPeanut } from "react-icons/gi";
 
+import menuData from "@/data/menu.json";
 import TableRow from "./TableRow";
 
 export default function Menu() {
@@ -95,48 +97,21 @@ export default function Menu() {
           <div className="no-scrollbar h-full overflow-y-scroll border-t-2">
             <table className="h-full w-full table-fixed border-spacing-0">
               <tbody className="h-full">
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
-                <TableRow
-                  image="Image"
-                  dishName="Dish Name"
-                  price="$xx.xx"
-                  status="Active"
-                />
+                {Object.entries(menuData).map(([dishName, dishDetails]) => (
+                  <TableRow
+                    key={dishName}
+                    image={
+                      <img
+                        src={dishDetails.image}
+                        alt={dishName}
+                        className="h-12 w-12 object-cover"
+                      />
+                    }
+                    dishName={dishName}
+                    price={`$${dishDetails.price.toFixed(2)}`}
+                    status={dishDetails.status}
+                  />
+                ))}
               </tbody>
             </table>
           </div>

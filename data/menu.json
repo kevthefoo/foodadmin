@@ -1,0 +1,82 @@
+{
+    "Teriyaki Chicken Roll": {
+        "price": 8.99,
+        "description": "Grilled chicken with teriyaki sauce, avocado, and cucumber.",
+        "image": "/teriyaki_chicken_roll.png",
+        "ingredients": [
+            "Grilled chicken",
+            "Teriyaki sauce",
+            "Avocado",
+            "Cucumber"
+        ],
+        "status": true
+    },
+    "Rainbow Roll": {
+        "price": 12.99,
+        "description": "A colorful mix of tuna, salmon, and avocado.",
+        "image": "/rainbow_roll.png",
+        "ingredients": [
+            "Tuna",
+            "Salmon",
+            "Avocado"
+        ],
+        "status": true
+    },
+    "Spicy Tuna Roll": {
+        "price": 10.99,
+        "description": "Spicy tuna with cucumber and avocado, topped with spicy mayo.",
+        "image": "/spicy_tuna_roll.png",
+        "ingredients": [
+            "Spicy tuna",
+            "Cucumber",
+            "Avocado",
+            "Spicy mayo"
+        ],
+        "status": true
+    },
+    "Tuna Sashimi": {
+        "price": 14.99,
+        "description": "Fresh tuna sashimi served with soy sauce and wasabi.",
+        "image": "/tuna_sashimi.png",
+        "ingredients": [
+            "Tuna",
+            "Soy sauce",
+            "Wasabi"
+        ],
+        "status": true
+    },
+    "Salmon Nigiri": {
+        "price": 11.99,
+        "description": "Fresh salmon nigiri served with soy sauce and wasabi.",
+        "image": "/salmon_nigiri.png",
+        "ingredients": [
+            "Salmon",
+            "Rice",
+            "Soy sauce",
+            "Wasabi"
+        ],
+        "status": true
+    },
+    "Avocado Roll": {
+        "price": 6.99,
+        "description": "Simple and delicious avocado roll.",
+        "image": "/avocado_roll.png",
+        "ingredients": [
+            "Avocado",
+            "Rice",
+            "Nori"
+        ],
+        "status": false
+    },
+    "Tamago Nigiri": {
+        "price": 7.99,
+        "description": "Sweet Japanese omelette nigiri served with soy sauce.",
+        "image": "/tamago_nigiri.png",
+        "ingredients": [
+            "Tamago (Japanese omelette)",
+            "Rice",
+            "Soy sauce"
+        ],
+        "status": false
+    }
+}
