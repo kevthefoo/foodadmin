@@ -1,6 +1,6 @@
 "use client";
 import { redirect } from "next/navigation";
-import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
+import { UserButton, useUser } from "@clerk/nextjs";
 
 export default function UserButtonComponent() {
   const { user } = useUser();
