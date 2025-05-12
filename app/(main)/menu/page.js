@@ -10,6 +10,8 @@ import { LuMilk } from "react-icons/lu";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { GiPeanut } from "react-icons/gi";
 
+import TableRow from "./TableRow";
+
 export default function Menu() {
   const [formData, setFormData] = useState({
     dishName: "",
@@ -85,7 +87,7 @@ export default function Menu() {
                 <th className="px-6 py-4">Dish Name</th>
                 <th className="px-6 py-4">Price</th>
                 <th className="px-6 py-4">Status</th>
-                <th className="px-6 py-4">Details</th>
+                <th className="px-6 py-4">Action</th>
               </tr>
             </thead>
           </table>
@@ -93,149 +95,48 @@ export default function Menu() {
           <div className="no-scrollbar h-full overflow-y-scroll border-t-2">
             <table className="h-full w-full table-fixed border-spacing-0">
               <tbody className="h-full">
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Image
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Dish Name
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    $xx.xx
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Active
-                  </td>
-                  <td className="border-b-2 border-black px-6 py-6 text-center">
-                    Edit
-                  </td>
-                </tr>
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
+                <TableRow
+                  image="Image"
+                  dishName="Dish Name"
+                  price="$xx.xx"
+                  status="Active"
+                />
               </tbody>
             </table>
           </div>
