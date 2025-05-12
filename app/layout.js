@@ -3,7 +3,7 @@ import "@/app/globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
+import { dark, neobrutalism } from "@clerk/themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider
       afterSignOutUrl="/"
-      appearance={{
-        baseTheme: dark,
-      }}
+      // appearance={{
+      //   baseTheme: neobrutalism,
+      // }}
     >
       <html lang="en">
         <body
