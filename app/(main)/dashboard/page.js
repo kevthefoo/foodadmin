@@ -3,8 +3,8 @@
 export default function Dashboard() {
   return (
     <>
-      <h1 className="mb-4 text-2xl">Dashboard</h1>
-      <div className="grid h-full w-full grid-cols-4">
+      <h1 className="mb-4 text-2xl select-none">Dashboard</h1>
+      <div className="grid h-full w-full grid-cols-4 select-none">
         <div className="flex aspect-square w-2/3 flex-col items-center justify-center rounded-xl border-2 border-black bg-stone-300">
           <p>Dishes</p>
           <p>10</p>

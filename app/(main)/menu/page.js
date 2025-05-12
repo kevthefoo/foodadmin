@@ -75,7 +75,7 @@ export default function Menu() {
 
   return (
     <>
-      <h1 className="mb-4 text-2xl">Menu</h1>
+      <h1 className="mb-4 text-2xl select-none">Menu</h1>
       <div className="flex h-full w-full items-center justify-start gap-4">
         <div className="flex h-[500px] w-8/12 flex-col overflow-y-hidden rounded-xl border-2 border-black">
           <table className="w-full table-fixed border-spacing-0">

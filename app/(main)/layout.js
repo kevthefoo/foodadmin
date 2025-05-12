@@ -15,10 +15,16 @@ export default function MainLayout({ children }) {
   return (
     <section className="flex h-screen w-screen flex-col justify-start overflow-auto pb-4">
       <header className="flex justify-center gap-2 px-10 pt-4 pb-2">
-        <Image src={logo} alt="logo" width={50} height={50} />
+        <Image
+          src={logo}
+          alt="logo"
+          width={50}
+          height={50}
+          className="select-none"
+        />
         <nav className="flex w-full items-center justify-between border-b-2 border-black">
-          <h1 className="text-2xl">DineAR</h1>
-          <div className="flex items-center">
+          <h1 className="text-2xl select-none">DineAR</h1>
+          <div className="flex items-center select-none">
             <p>English</p>
             <div className="cursor-pointer">
               <MdKeyboardArrowDown />
@@ -28,7 +34,7 @@ export default function MainLayout({ children }) {
       </header>
 
       <main className="flex h-full items-center justify-center pt-4">
-        <nav className="h-full w-1/6 border-r-2 border-black px-16 pt-4">
+        <nav className="h-full w-1/6 border-r-2 border-black px-16 pt-4 select-none">
           <ul className="flex flex-col items-start justify-start gap-4">
             <li className="text-xl">
               <Link
