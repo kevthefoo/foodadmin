@@ -100,7 +100,7 @@ export default function Menu() {
       <h1 className="mb-4 text-2xl select-none">Menu</h1>
       <div className="flex h-full w-full items-center justify-start gap-4">
         <div className="flex h-[500px] w-8/12 flex-col overflow-y-hidden rounded-xl border-2 border-black">
-          <table className="w-full table-fixed border-spacing-0">
+          <table className="w-full table-fixed border-spacing-0 bg-[#EBE3D3]">
             <thead>
               <tr>
                 <th className="px-6 py-4">Thumbnail</th>
@@ -324,7 +324,7 @@ export default function Menu() {
                 />
                 <button
                   type="button"
-                  className="flex-1 cursor-pointer rounded-full border px-4 py-1"
+                  className="flex-1 cursor-pointer rounded-full border bg-[#C2B59B] px-4 py-1"
                   onClick={() => document.getElementById("fileInput").click()}
                 >
                   Upload
@@ -340,7 +340,7 @@ export default function Menu() {
               />
               <button
                 type="submit"
-                className="flex-1 cursor-pointer rounded-full border py-1"
+                className="flex-1 cursor-pointer rounded-full border bg-[#C2B59B] py-1"
               >
                 Save
               </button>

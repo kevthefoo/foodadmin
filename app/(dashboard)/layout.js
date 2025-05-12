@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
           <main className="flex h-full items-center justify-center pt-4">
             <nav className="flex h-full w-1/6 flex-col items-start justify-between border-r-2 px-16 pt-4 select-none">
               <ul className="flex flex-col items-start justify-start gap-4">
-                <li className="text-xl">
+                <li className="text-xl text-[#7B7260]">
                   <Link
                     href="/dashboard"
                     className="flex items-center justify-center gap-2"
@@ -57,7 +57,8 @@ export default function RootLayout({ children }) {
                     <h1>Dashboard</h1>
                   </Link>
                 </li>
-                <li className="text-xl">
+
+                <li className="text-xl text-[#7B7260]">
                   <Link
                     href="/menu"
                     className="flex items-center justify-center gap-2"
@@ -66,7 +67,8 @@ export default function RootLayout({ children }) {
                     <h1>Menu</h1>
                   </Link>
                 </li>
-                <li className="text-xl">
+
+                <li className="text-xl text-[#7B7260]">
                   <Link
                     href="/profile"
                     className="flex items-center justify-center gap-2"
@@ -76,7 +78,7 @@ export default function RootLayout({ children }) {
                   </Link>
                 </li>
 
-                <li className="text-xl">
+                <li className="text-xl text-[#7B7260]">
                   <Link
                     href="/settings"
                     className="flex items-center justify-center gap-2"
@@ -86,7 +88,8 @@ export default function RootLayout({ children }) {
                     <h1>Settings</h1>
                   </Link>
                 </li>
-                <li className="text-xl">
+
+                <li className="text-xl text-[#7B7260]">
                   <Link
                     href="/support"
                     className="flex items-center justify-center gap-2"
