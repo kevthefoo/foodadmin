@@ -17,6 +17,10 @@ export default function Dashboard() {
           <p>Recent Activity Log</p>
           <p>10</p>
         </div>
+        <div className="flex aspect-square w-2/3 flex-col items-center justify-center rounded-xl border-2 border-black bg-stone-300">
+          <p>Sales</p>
+          <p>1078</p>
+        </div>
         <div className="flex aspect-square w-2/3 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-black bg-stone-300">
           <p className="text-9xl">+</p>
         </div>

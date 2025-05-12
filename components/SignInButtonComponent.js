@@ -21,7 +21,7 @@ export default function SignInButtonComponent() {
         </>
       ) : (
         <>
-          <SignInButton mode="modal" />
+          <SignInButton mode="modal" className="border-2 px-4 py-2 rounded-xl border-black cursor-pointer"/>
         </>
       )}
     </>
