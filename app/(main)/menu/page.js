@@ -242,7 +242,9 @@ export default function Menu() {
         </div>
 
         <div className="no-scrollbar h-[500px] w-4/12 overflow-y-scroll rounded-xl border-2 border-black p-4">
-          <h2 className="mb-2 text-xl font-semibold select-none">Add New Dish</h2>
+          <h2 className="mb-2 text-xl font-semibold select-none">
+            Add New Dish
+          </h2>
 
           <form className="space-y-3" onSubmit={handleSubmit}>
             <div>
