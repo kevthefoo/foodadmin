@@ -1,18 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import logo from "@/assets/logo.png";
-
+import NavbarComponent from "@/components/NavbarComponent";
 import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/nextjs";
 
 import UserButtonComponent from "@/components/UserButtonComponent";
-
-import {
-  FaHouseUser,
-  FaCircleUser,
-  FaList,
-  FaWrench,
-  FaHeadset,
-} from "react-icons/fa6";
 
 export const metadata = {
   title: "DineAR",
@@ -43,63 +34,7 @@ export default function RootLayout({ children }) {
           </header>
 
           <main className="flex h-full items-center justify-center pt-4">
-            <nav className="flex h-full w-1/6 flex-col items-start justify-between border-r-2 px-16 pt-4 select-none">
-              <ul className="flex flex-col items-start justify-start gap-4">
-                <li className="text-xl text-[#7B7260]">
-                  <Link
-                    href="/dashboard"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <div>
-                      <FaHouseUser />
-                    </div>
-
-                    <h1>Dashboard</h1>
-                  </Link>
-                </li>
-
-                <li className="text-xl text-[#7B7260]">
-                  <Link
-                    href="/menu"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <FaList />
-                    <h1>Menu</h1>
-                  </Link>
-                </li>
-
-                <li className="text-xl text-[#7B7260]">
-                  <Link
-                    href="/profile"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <FaCircleUser />
-                    <h1>Profile</h1>
-                  </Link>
-                </li>
-
-                <li className="text-xl text-[#7B7260]">
-                  <Link
-                    href="/settings"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <FaWrench />
-
-                    <h1>Settings</h1>
-                  </Link>
-                </li>
-
-                <li className="text-xl text-[#7B7260]">
-                  <Link
-                    href="/support"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <FaHeadset />
-                    <h1>Support</h1>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+            <NavbarComponent />
             <div className="flex h-full w-full flex-col items-start justify-start px-4">
               {children}
             </div>
