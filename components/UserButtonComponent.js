@@ -3,7 +3,11 @@ import { redirect } from "next/navigation";
 import { UserButton, useUser } from "@clerk/nextjs";
 
 export default function UserButtonComponent() {
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
+  if (!isLoaded) {
+    return <div></div>;
+  }
+
   if (!user) {
     redirect("/");
   }

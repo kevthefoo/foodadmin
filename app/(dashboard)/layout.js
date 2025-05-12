@@ -2,15 +2,15 @@ import Image from "next/image";
 import logo from "@/assets/logo.png";
 import NavbarComponent from "@/components/NavbarComponent";
 import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/nextjs";
-
 import UserButtonComponent from "@/components/UserButtonComponent";
 
+import { ClerkProvider } from "@clerk/nextjs";
 export const metadata = {
   title: "DineAR",
   description: "Best retaurant management system",
 };
 
-export default function RootLayout({ children }) {
+export default function DashboardLayout({ children }) {
   return (
     <>
       <SignedIn>
@@ -42,9 +42,9 @@ export default function RootLayout({ children }) {
         </section>
       </SignedIn>
 
-      <SignedOut>
+      {/* <SignedOut>
         <RedirectToSignIn />
-      </SignedOut>
+      </SignedOut> */}
     </>
   );
 }
