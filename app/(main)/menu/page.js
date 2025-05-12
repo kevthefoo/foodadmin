@@ -1,6 +1,4 @@
 "use client";
-
-
 import { useState } from "react";
 
 import { Toaster, toast } from "sonner";
@@ -15,6 +13,26 @@ import menuData from "@/data/menu.json";
 import TableRow from "./TableRow";
 
 export default function Menu() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedDish, setSelectedDish] = useState(null);
+
+  const handleDeleteClick = (dishName) => {
+    setSelectedDish(dishName);
+    setShowPopup(true);
+  };
+
+  const handleConfirmDelete = () => {
+    console.log(`Deleted: ${selectedDish}`);
+    setShowPopup(false);
+    setSelectedDish(null);
+    toast.success("Item deleted successfully!");
+  };
+
+  const handleCancelDelete = () => {
+    setShowPopup(false);
+    setSelectedDish(null);
+  };
+
   const [formData, setFormData] = useState({
     dishName: "",
     description: "",
@@ -110,6 +128,7 @@ export default function Menu() {
                     dishName={dishName}
                     price={`$${dishDetails.price.toFixed(2)}`}
                     status={dishDetails.status}
+                    onDelete={() => handleDeleteClick(dishName)}
                   />
                 ))}
               </tbody>
@@ -329,6 +348,44 @@ export default function Menu() {
           </form>
         </div>
       </div>
+
+      {showPopup && (
+        <div
+          className="bg-opacity-50 fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+          onClick={handleCancelDelete}
+        >
+          <div
+            className="rounded-lg bg-white p-6 shadow-lg"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <p className="mb-4 text-lg">
+              Are you sure you want to delete
+              <span className="text-red-400 italic"> {selectedDish} </span>?
+            </p>
+            <div className="flex justify-end gap-4">
+              <button
+                className="cursor-pointer rounded bg-red-500 px-4 py-2 text-white select-none hover:bg-red-600"
+                onClick={handleConfirmDelete}
+              >
+                Confirm
+              </button>
+
+              <Toaster
+                position="bottom-right"
+                visibleToasts={1}
+                duration={1500}
+                richColors
+              />
+              <button
+                className="cursor-pointer rounded bg-gray-300 px-4 py-2 text-black select-none hover:bg-gray-400"
+                onClick={handleCancelDelete}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
