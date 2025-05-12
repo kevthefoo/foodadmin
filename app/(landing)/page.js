@@ -11,8 +11,7 @@ export default function Home() {
   }
 
   if (user) {
-    console.log(user.firstName);
-    // redirect("/dashboard");
+    redirect("/dashboard");
   } else {
     return <SignInButtonComponent />;
   }

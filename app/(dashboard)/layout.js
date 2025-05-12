@@ -42,9 +42,9 @@ export default function DashboardLayout({ children }) {
         </section>
       </SignedIn>
 
-      {/* <SignedOut>
+      <SignedOut>
         <RedirectToSignIn />
-      </SignedOut> */}
+      </SignedOut>
     </>
   );
 }
