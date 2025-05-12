@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa6";
 export default function MainLayout({ children }) {
   return (
-    <section className="flex h-screen w-screen flex-col justify-start">
+    <section className="flex h-screen w-screen flex-col justify-start overflow-auto">
       <header className="flex justify-center gap-2 px-10 pt-4 pb-2">
         <Image src={logo} alt="logo" width={50} height={50} />
         <nav className="flex w-full items-center justify-between border-b-2 border-black">

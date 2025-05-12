@@ -2,38 +2,170 @@ export default function Menu() {
   return (
     <>
       <h1 className="mb-4 text-2xl">Menu</h1>
-      <div className="flex h-full w-full items-center justify-start border-8 border-blue-500">
-        <table className="h-full w-8/12 border-separate rounded-xl border-8 border-amber-300 text-left">
-          <thead>
-            <tr>
-              <th className="px-6 py-4">Thumbnail</th>
-              <th className="px-6 py-4">Dish Name</th>
-              <th className="px-6 py-4">Price</th>
-              <th className="px-6 py-4">Status</th>
-              <th className="px-6 py-4">Details</th>
-            </tr>
-          </thead>
+      <div className="flex h-full w-full items-center justify-start">
+        <div className="flex h-[500px] w-8/12 flex-col rounded-t-xl border-2 border-black">
+          <table className="w-full table-fixed border-spacing-0">
+            <thead>
+              <tr>
+                <th className="px-6 py-4">Thumbnail</th>
+                <th className="px-6 py-4">Dish Name</th>
+                <th className="px-6 py-4">Price</th>
+                <th className="px-6 py-4">Status</th>
+                <th className="px-6 py-4">Details</th>
+              </tr>
+            </thead>
+          </table>
 
-          <tbody className="">
-            <tr className="border-2 border-black">
-              <td className="px-6 py-6">
-                <div className="flex h-16 w-16 items-center justify-center rounded border border-dashed text-sm">
-                  Image
-                </div>
-              </td>
-              <td className="px-6 py-6">Dish Name</td>
-              <td className="px-6 py-6">$xx.xx</td>
-              <td className="px-6 py-6">
-                <span className="inline-block rounded-full px-4 py-1 text-sm">
-                  Active
-                </span>
-              </td>
-              <td className="px-6 py-6">
-                <button className="rounded-full px-5 py-1 text-sm">Edit</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <div className="no-scrollbar h-full overflow-y-scroll border-t-2">
+            <table className="h-full w-full table-fixed border-spacing-0">
+              <tbody className="h-full">
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Image
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Dish Name
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    $xx.xx
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Active
+                  </td>
+                  <td className="border-b-2 border-black px-6 py-6 text-center">
+                    Edit
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         {/* <div className="h-full border-2 border-amber-300 rounded-xl p-4">
                     <button className="block w-full   text-white font-semibold py-1 mb-4 rounded-full">
