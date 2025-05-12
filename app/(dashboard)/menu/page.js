@@ -213,7 +213,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(0)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[0] ? "bg-blue-300" : "bg-white"
+                    isClicked[0] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Egg"
                 >
@@ -222,7 +222,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(1)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[1] ? "bg-blue-300" : "bg-white"
+                    isClicked[1] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Fish"
                 >
@@ -231,7 +231,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(2)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[2] ? "bg-blue-300" : "bg-white"
+                    isClicked[2] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Shrimp"
                 >
@@ -240,7 +240,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(3)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[3] ? "bg-blue-300" : "bg-white"
+                    isClicked[3] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Wheat"
                 >
@@ -249,7 +249,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(4)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[4] ? "bg-blue-300" : "bg-white"
+                    isClicked[4] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Milk"
                 >
@@ -259,7 +259,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(5)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[5] ? "bg-blue-300" : "bg-white"
+                    isClicked[5] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Junk Food"
                 >
@@ -269,7 +269,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(6)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[6] ? "bg-blue-300" : "bg-white"
+                    isClicked[6] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Peanut"
                 >
@@ -279,7 +279,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(7)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[7] ? "bg-blue-300" : "bg-white"
+                    isClicked[7] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Cat"
                 >
@@ -289,7 +289,7 @@ export default function Menu() {
                 <div
                   onClick={() => iconClickHandler(8)}
                   className={`flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-black ${
-                    isClicked[8] ? "bg-blue-300" : "bg-white"
+                    isClicked[8] ? "bg-blue-300" : "bg-[#ededed]"
                   }`}
                   title="Worst Language In The World"
                 >
