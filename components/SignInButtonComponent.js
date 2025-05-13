@@ -17,7 +17,7 @@ export default function SignInButtonComponent() {
         <>
           <Link
             href="/dashboard"
-            className="flex cursor-pointer items-center justify-center rounded-2xl border-2 border-black px-4 py-2 text-black transition-colors duration-300 select-none hover:bg-black hover:text-white"
+            className="flex cursor-pointer items-center justify-center rounded-2xl border-2 border-black px-4 py-2 font-semibold text-black transition-colors duration-300 select-none hover:bg-black hover:text-white"
           >
             Enter
           </Link>
@@ -26,7 +26,7 @@ export default function SignInButtonComponent() {
         <>
           <SignInButton
             mode="modal"
-            className="cursor-pointer rounded-xl border-2 border-black px-4 py-2 transition-colors duration-300 hover:bg-black hover:text-white"
+            className="cursor-pointer rounded-xl border-2 border-black px-4 py-2 font-semibold transition-colors duration-300 hover:bg-black hover:text-white"
           />
         </>
       )}

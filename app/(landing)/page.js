@@ -34,8 +34,8 @@ export default function Home() {
           height={150}
           className="mb-4 select-none"
         />
-        <h1 className="text-2xl select-none">DineAR</h1>
-        <p className="mb-4 select-none">
+        <h1 className="text-2xl font-bold select-none">DineAR</h1>
+        <p className="mb-4 text-xl select-none">
           Your best restaurant management system with AR Technology
         </p>
         <SignInButtonComponent />;
