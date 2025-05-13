@@ -98,8 +98,8 @@ export default function Menu() {
   return (
     <>
       <h1 className="mb-4 text-2xl select-none">Menu</h1>
-      <div className="flex h-full w-full items-center justify-start gap-4">
-        <div className="flex h-[500px] w-8/12 flex-col overflow-y-hidden rounded-xl border-2 border-black">
+      <div className="flex h-full w-full items-start justify-start gap-4">
+        <div className="flex h-[545px] w-8/12 flex-col overflow-y-hidden rounded-xl border-2 border-black">
           <table className="w-full table-fixed border-spacing-0 bg-[#EBE3D3]">
             <thead>
               <tr>
@@ -118,13 +118,7 @@ export default function Menu() {
                 {Object.entries(menuData).map(([dishName, dishDetails]) => (
                   <TableRow
                     key={dishName}
-                    image={
-                      <img
-                        src={dishDetails.image}
-                        alt={dishName}
-                        className="h-12 w-12 object-cover"
-                      />
-                    }
+                    imageSrc={dishDetails.image}
                     dishName={dishName}
                     price={`$${dishDetails.price.toFixed(2)}`}
                     status={dishDetails.status}
@@ -136,7 +130,7 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="no-scrollbar h-[500px] w-4/12 overflow-y-scroll rounded-xl border-2 border-black p-4">
+        <div className="no-scrollbar h-[545px] w-4/12 overflow-y-scroll rounded-xl border-2 border-black p-4">
           <h2 className="mb-2 text-xl font-semibold select-none">
             Add New Dish
           </h2>
