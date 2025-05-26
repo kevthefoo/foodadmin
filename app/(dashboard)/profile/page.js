@@ -3,8 +3,8 @@ import { useState } from "react";
 
 export default function Profile() {
   const [form, setForm] = useState({
-    restaurantName: "Dine Dine Sushi",
-    phone: "0498745896",
+    restaurantName: "Motto Motto",
+    phone: "0412345678",
     address: "75 Main Street, Melbourne, VIC 3000",
   });
 
