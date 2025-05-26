@@ -34,7 +34,7 @@ export default function NavbarComponent() {
               <FaHouseUser />
             </div>
 
-            <h1>Dashboard</h1>
+            <h1>Stat</h1>
           </Link>
         </li>
 
