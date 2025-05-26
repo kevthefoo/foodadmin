@@ -14,7 +14,10 @@ export default function Profile() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleEdit = () => setEditing(true);
+  const handleEdit = () => {
+    console.log("Edit button clicked");
+    setEditing(true);
+  };
 
   const handleSave = (e) => {
     e.preventDefault();
@@ -65,23 +68,24 @@ export default function Profile() {
               required
             />
           </label>
-          {editing ? (
-            <button
-              type="submit"
-              className="mt-2 rounded bg-blue-600 px-4 py-2 text-white"
-            >
-              Save
-            </button>
-          ) : (
-            <button
-              type="button"
-              onClick={handleEdit}
-              className="mt-2 rounded bg-gray-600 px-4 py-2 text-white cursor-pointer"
-            >
-              Edit
-            </button>
-          )}
         </form>
+        {editing ? (
+          <button
+            type="submit"
+            onClick={handleSave}
+            className="mt-2 cursor-pointer rounded bg-blue-600 px-4 py-2 text-white"
+          >
+            Save
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={handleEdit}
+            className="mt-2 cursor-pointer rounded bg-gray-600 px-4 py-2 text-white"
+          >
+            Edit
+          </button>
+        )}
       </div>
     </>
   );
